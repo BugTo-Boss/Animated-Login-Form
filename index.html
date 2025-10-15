@@ -4,8 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
+    <!-- The form will be placed on this div. -->
+    <div class="wrapper">
+
+        <!-- page Login -->
+        <form action="">
+            <h1>Login</h1>
+            <!-- username field in page login -->
+            <div class="input-login">
+                <input type="text" name="username" id="username" required>
+                <span>username</span>
+                <i></i>
+            </div>
+            <!-- password field in page login -->
+            <div class="input-login">
+                <input type="password" name="password" id="password" required>
+                <span>password</span>
+                <i></i>
+            </div>
+
+            <!-- forgot password and sign-up -->
+            <div class="link-login">
+                <a href="">forgot-password</a>
+                <a href="">sign-up</a>
+            </div>
+            <!-- Submit button for Login -->
+            <input type="submit" value="Login">
+        </form>
+
+        <!-- Page sign up -->
+        <form action="">
+            <h1>Sign-Up</h1>
+
+            <!-- username field in page sign-up -->
+            <div class="input-sign">
+                <input type="text" name="username" id="" required>
+                <span>username</span>
+                <i></i>
+            </div>
+            <!-- email field in page sign-up -->
+            <div class="input-sign">
+                <input type="email" name="email" id="" required>
+                <span>email</span>
+                <i></i>
+            </div>
+
+            <!-- password field in page sign-up -->
+            <div class="input-sign">
+                <input type="password" name="password" id="" required>
+                <span>password</span>
+                <i></i>
+            </div>
+
+            <!-- Confirm password field in page sign-up -->
+            <div class="input-sign">
+                <input type="password" name="Confirm password" id="" required>
+                <span>Confirm Password</span>
+                <i></i>
+            </div>
+            <!-- Submit button for sign-up -->
+            <input type="submit" value="sign-up">
+        </form>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
