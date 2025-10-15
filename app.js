@@ -31,3 +31,26 @@ goLogin.addEventListener("click" , (e) =>{
     signupForm.classList.remove("active");
     loginForm.classList.add("active");
 })
+
+const confirmPassword = document.getElementById("con-password-sign");
+const passwordSign = document.getElementById("password-sign");
+
+function checkPasswordMatch(){
+    if(confirmPassword.value === "" || passwordSign.value === ""){
+        confirmPassword.style.border = "2px solid transparent";
+        passwordSign.style.border= "2px solid transparent";
+        return;
+    }
+
+    if(confirmPassword.value !== passwordSign.value){
+        confirmPassword.style.border = "2px solid red";
+        passwordSign.style.border= "2px solid red";
+    }
+    else{
+        confirmPassword.style.border = "2px solid green";
+        passwordSign.style.border= "2px solid green";
+    }
+}
+
+confirmPassword.addEventListener("input", checkPasswordMatch);
+passwordSign.addEventListener("input", checkPasswordMatch);
