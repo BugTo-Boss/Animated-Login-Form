@@ -59,6 +59,13 @@ body{
 }
 
 /* add style form page login */
+/* form {
+    display: none;
+} */
+/* form.active {
+    display: block;
+} */
+
 .wrapper form{
     position: absolute;
     inset: 4px;
@@ -66,6 +73,14 @@ body{
     padding: 10px 50px;
     border-radius: 8px;
     z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.wrapper form.active {
+    opacity: 1;
+    visibility: visible;
 }
 
 /* Adding styles to elements within the login form */
@@ -184,5 +199,121 @@ input[type="submit"]{
 }
 
 input[type="submit"]:hover{
+    opacity: 0.8;
+}
+
+
+/* div with class input-login in sign up */
+.wrapper form .input-sign{
+    width: 250px;
+    height: 35px;
+    margin-top: 25px;
+    position: relative;
+}
+
+/* Inputs inside the login input */
+.wrapper form .input-sign input{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: transparent;    
+    padding: 0 5px;
+    z-index: 10;
+}
+
+/* add style to <span> and <i> */
+.wrapper form .input-sign span{
+    position: absolute;
+    left: 3px;
+    bottom: 5px;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    transition: 0.6s;
+}
+
+.wrapper form .input-sign input:valid ~ span ,
+.wrapper form .input-sign input:focus ~ span{
+    transform: translateY(-32px);
+    color: #fff;
+}
+
+
+.wrapper form .input-sign i.bg-sign{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    border-radius: 5px;
+    background: #fff;
+    transition: 0.5s;
+}
+
+.wrapper form .input-sign input:valid ~ i.bg-sign ,
+.wrapper form .input-sign input:focus ~ i.bg-sign{
+    height: 100%;
+}
+
+.wrapper form i.pas-sign{
+    position: absolute;
+    right: 0;
+    bottom: 9px;
+    z-index: 10;
+    display: none;
+    transition: 0.8s ease;
+}
+
+.wrapper form .input-sign input:valid ~ i.pas-sign ,
+.wrapper form .input-sign input:focus ~ i.pas-sign{
+    display: inline;
+}
+
+/* add style to links */
+.wrapper form .link-sign{
+    width: 250px;
+    display: flex;
+    justify-content: flex-start;
+    margin-top:20px;
+}
+
+.wrapper form .link-sign p{
+    font-size: 1em;
+}
+.wrapper form .link-sign a{
+    text-decoration: none;
+    color: rgb(230, 230, 230);
+    font-size: 0.8em;
+    text-transform: capitalize;
+    transition: 0.2s;
+    margin-top: 30px;
+}
+
+.wrapper form .link-sign a:hover{
+    color: gray;
+    text-decoration: underline;
+}
+
+/* add style to input type:"submit" */
+input[type="submit"].sub-sign{
+    position: absolute;
+    bottom: 20px;
+    width: 80px;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s linear;
+    text-transform: capitalize;
+}
+
+input[type="submit"].sub-sign:hover{
     opacity: 0.8;
 }

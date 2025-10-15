@@ -13,7 +13,7 @@
     <div class="wrapper">
 
         <!-- page Login -->
-        <form action="">
+        <form action="" class="active">
             <h1>Login</h1>
             <!-- username field in page login -->
             <div class="input-login">
@@ -39,39 +39,44 @@
         </form>
 
         <!-- Page sign up -->
-        <form action="" style="display: none;">
+        <form action="" class="">
             <h1>Sign-Up</h1>
 
             <!-- username field in page sign-up -->
             <div class="input-sign">
                 <input type="text" name="username" id="" required>
                 <span>username</span>
-                <i></i>
+                <i class="bg-sign"></i>
             </div>
             <!-- email field in page sign-up -->
             <div class="input-sign">
                 <input type="email" name="email" id="" required>
                 <span>email</span>
-                <i></i>
+                <i class="bg-sign"></i>
             </div>
 
             <!-- password field in page sign-up -->
             <div class="input-sign">
                 <input type="password" name="password" id="" required>
-                <i class="fa fa-eye"></i>
+                <i class="fa fa-eye pas-sign"></i>
                 <span>password</span>
-                <i></i>
+                <i class="bg-sign"></i>
             </div>
 
             <!-- Confirm password field in page sign-up -->
             <div class="input-sign">
                 <input type="password" name="Confirm password" id="" required>
-                <i class="fa fa-eye"></i>
+                <i class="fa fa-eye pas-sign"></i>
                 <span>Confirm Password</span>
-                <i></i>
+                <i class="bg-sign"></i>
+            </div>
+            <div class="link-sign">
+                <p>
+                    I Have Account / <a href=""> login</a>
+                </p>
             </div>
             <!-- Submit button for sign-up -->
-            <input type="submit" value="sign-up">
+            <input type="submit" value="sign-up" class="sub-sign">
         </form>
     </div>
 
