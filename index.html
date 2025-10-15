@@ -13,7 +13,7 @@
     <div class="wrapper">
 
         <!-- page Login -->
-        <form action="" class="active">
+        <form action="" class="login-form active">
             <h1>Login</h1>
             <!-- username field in page login -->
             <div class="input-login">
@@ -24,7 +24,7 @@
             <!-- password field in page login -->
             <div class="input-login">
                 <input type="password" name="password" id="password" required>
-                <i class="fa fa-eye pas-login"></i>
+                <i class="fa fa-eye pas-login toggle-pass" id="show-Eye"></i>
                 <span>password</span>
                 <i class="bg-login"></i>
             </div>
@@ -32,14 +32,14 @@
             <!-- forgot password and sign-up -->
             <div class="link-login">
                 <a href="">forgot-password</a>
-                <a href="">sign-up</a>
+                <a href="#" id="goSignUp">sign-up</a>
             </div>
             <!-- Submit button for Login -->
             <input type="submit" value="Login">
         </form>
 
         <!-- Page sign up -->
-        <form action="" class="">
+        <form action="" class="signup-form">
             <h1>Sign-Up</h1>
 
             <!-- username field in page sign-up -->
@@ -57,22 +57,22 @@
 
             <!-- password field in page sign-up -->
             <div class="input-sign">
-                <input type="password" name="password" id="" required>
-                <i class="fa fa-eye pas-sign"></i>
+                <input type="password" name="password" id="password-sign" required>
+                <i class="fa fa-eye pas-sign toggle-pass"></i>
                 <span>password</span>
                 <i class="bg-sign"></i>
             </div>
 
             <!-- Confirm password field in page sign-up -->
             <div class="input-sign">
-                <input type="password" name="Confirm password" id="" required>
-                <i class="fa fa-eye pas-sign"></i>
+                <input type="password" name="Confirm password" id="con-password-sign" required>
+                <i class="fa fa-eye pas-sign toggle-pass"></i>
                 <span>Confirm Password</span>
                 <i class="bg-sign"></i>
             </div>
             <div class="link-sign">
                 <p>
-                    I Have Account / <a href=""> login</a>
+                    I Have Account / <a href="#" id="goLogin"> login</a>
                 </p>
             </div>
             <!-- Submit button for sign-up -->

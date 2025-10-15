@@ -59,14 +59,10 @@ body{
 }
 
 /* add style form page login */
-/* form {
-    display: none;
-} */
-/* form.active {
-    display: block;
-} */
 
-.wrapper form{
+
+
+.wrapper form {
     position: absolute;
     inset: 4px;
     background: #222;
@@ -75,12 +71,14 @@ body{
     z-index: 10;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.4s ease-in-out;
+    pointer-events: none;
+    transition: opacity 2s ease-in-out;
 }
 
 .wrapper form.active {
     opacity: 1;
     visibility: visible;
+    pointer-events: auto;
 }
 
 /* Adding styles to elements within the login form */
@@ -317,3 +315,4 @@ input[type="submit"].sub-sign{
 input[type="submit"].sub-sign:hover{
     opacity: 0.8;
 }
+
